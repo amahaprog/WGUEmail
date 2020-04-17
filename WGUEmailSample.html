@@ -2,125 +2,104 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <style>
-	body {
-		background-color: #ffffff;
-		float: left;
-		padding: 22px;
-	}
-
-	h2{
-		font-weight: bold;
-		font-style: normal;
-		font-family: helvetica;
-		font-size: 48px;
-		color: #BC8F8F;
-	}
-
-	p {
-		font-family: calibri;
-		font-size: 16.5px;
-	}
 /* general link design */
 	a {
 		text-decoration: none;
-		/*border:1px solid #CCC2CA;*/
-		background-color: #3aadff;
 		padding: 1.5px;
+		color: #3aadff;
 	}
-
-a:link {
-color: #ffffff;
-}
 
 /* visited link */
 a:visited {
-  color: #DBC7CE;
+  color: #8ca25f;
 }
 
 /* mouse over link */
 a:hover {
-  color: #EFDA64;
+  color: #80cc99;
   text-decoration: underline;
 }
 
-	p.signoff {
-		font-variant: small-caps;
-		color: #564846;
-	}
-
-	div.header {
-	background-color: #efefef;
-	color: #484946;
-	text-shadow: #cccccc; 
-	padding:15px;
-	}
-
-	div.footer {
-	background-color: #003057;
-	color: #ffffff;
-	text-shadow: #cccccc; 
-	padding:5px;
-	}
+/* animation of text*/
+@keyframes rollup {
+  0%   {background-color:#F0FFFF; left:0px; top:0px;}
+  25%  {background-color:#A52A2A; left:20px; top:0px;}
+  50%  {background-color:#006400; left:10px; top:10px;}
+  75%  {background-color:#8b008b; left:0px; top:20px;}
+  100% {background-color:#F0FFFF; left:0px; top:0px;}
+}
 
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Student 360&deg;&nbsp;|&nbsp;Western Governors University&nbsp;|&nbsp;WGU</title>
 </head>
 
-<body>
-<div class="header">Hello you!</div>
+<body style="font-family: calibri; font-size: 16.5px;">
+	
+	<!-- header of email -->
+<table style="margin: auto;  padding: 2px; border: 3px solid #327DA9; width: 50% !important; -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;">
 
-<p>At WGU, we don't joke with our students. <em>YOU</em> are at the heart of everything we do. Consequently, we'd like to highlight the achievements of our fantastic student body and alumni in a new series we're calling "<b>Student 360&deg;</b></p>
+<tr style="background-color: #efefef; border:1.5px solid #CCC2CA;">
+	<td>
+<img src="WGUHeader.png" alt="WGU Header Logo, Grey." style="display: block;
+  margin-left: auto; margin-right: auto; width: 40%;">
+</td>
+</tr>
 
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/lab0OyM5jRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+	<!-- body of email -->
 
-<p class="signoff">
-	<b>P.S.</b>, Our greatest advocates are our student and alumni. If you know of anyone that would like to go back to school, please share your experience with WGU and send them <a href="https://www.wgu.edu/admissions.html">here</a>.<br>
-<b>P.P.S</b>, Thank you as always for trusting us with your education.<br><br></a></p>
-<div class="footer">
-<p>No need to wait for spring or fall semester. It's back-to-school time at WGU year-round. Get started by talking to an Enrollment Counselor today, and you'll be on your way to realizing your dream of a bachelor's or master's degree—sooner than you might think!</p>
-<p><a title="Learn more about admissions" href="https://www.wgu.edu/admissions.html">Learn about online college admissions at WGU.</a><br />
+<tr style="background-color: #4d4d4d; text-align: center; color: #ffffff; text-shadow: #ffffff;"> 
+	<td style="font-variant: small-caps; padding: 5px;"><br>At WGU, we don't joke with our students. <em>YOU</em> are at the heart of everything we do. Consequently, we'd like to highlight the achievements of our fantastic student body and alumni in a new, <b>"360&deg;"</b> series.<br> <br>
+		</td>
+</tr>
+<tr style="background-color: #ffffff; color: #484946; text-shadow: #cccccc;">
+	<td>
+ Here's a quick motion graphics video created using After Effects:<br><br>
+	<video width="300" height="240" controls>
+  <source src="WGU360a.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br>
+	Additionally, I animated the headings in the email using CSS to show a simple alternative that can be done with code.
+</td>
+</tr>
+<tr style="background-color: #ffffff; color: #484946; text-shadow: #cccccc;">
+	<td>
+	<h2 style="font-weight: bold; text-align: left; font-family: helvetica; font-size: 26px; color: #3aadff; width: 190px;
+  height: 30px; position: relative; animation-name: rollup; animation-duration: 4s;">STUDENT 360&deg;</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue metus quam, eu luctus risus tincidunt ultrices. Mauris interdum magna ut orci tempus feugiat. Curabitur nec mauris vulputate, imperdiet lorem nec, tincidunt risus. Nunc tincidunt magna eu placerat interdum. Mauris lorem metus, malesuada id metus ut, semper ultricies urna. Mauris placerat gravida malesuada. Cras rhoncus sem eu tortor condimentum, quis semper neque ultricies. Morbi sollicitudin urna ante, at pellentesque nunc gravida a. 
+	<br><br>
+	<iframe width="100%" height="350" src="https://www.youtube.com/embed/7SaW5sT4G4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+	<h2 style="font-weight: bold; text-align: left; font-family: helvetica; font-size: 26px; color: #3aadff; width: 190px;
+  height: 30px; position: relative; animation-name: rollup; animation-duration: 4s;">ALUMNI 360&deg;</h2>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue metus quam, eu luctus risus tincidunt ultrices. Mauris interdum magna ut orci tempus feugiat. Curabitur nec mauris vulputate, imperdiet lorem nec, tincidunt risus. Nunc tincidunt magna eu placerat interdum. Mauris lorem metus, malesuada id metus ut, semper ultricies urna. Mauris placerat gravida malesuada. Cras rhoncus sem eu tortor condimentum, quis semper neque ultricies. Morbi sollicitudin urna ante, at pellentesque nunc gravida a. <br><br>
+	<iframe width="100%" height="350" src="https://www.youtube.com/embed/K-FUTfkDGSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br>
+	<br>
+	<b>P.S.</b>, Our greatest advocates are our student and alumni. If you know of anyone that would like to go back to school, please share your experience with WGU and send them <a href="https://www.wgu.edu/admissions.html"><b>HERE</b></a>!<br>
+	<b>P.P.S</b>, Thank you as always for trusting us with your education.<br>
+	<p style="text-align: center; color: #42527e;">
+		<i>WGU is on all social platforms!</i><br><br>
+			<a href="https://twitter.com/wgu"><img src="TwitterIcon.jpg"></a>
+<a href="https://www.facebook.com/wgu.edu/"><img src="FacebookIcon.jpg"></a>
+<a href="https://www.instagram.com/westerngovernorsu/"><img src="InstaIcon.jpg"></a>
+<a href="https://www.youtube.com/user/WesternGovernorsUniv"><img src="YoutubeIcon.jpg"></a><br>
+<i>Like, share, & subscribe!</i><br>
 </p>
-                <a target="_blank" href="https://inquiry.wgu.edu/#!/application">APPLY NOW</a>
-                <a target="_blank" href="https://inquiry.wgu.edu/#!/inquiryLoad">Request Info</a>
-                <a href="tel:866.225.5948">Call 866.225.5948</a></div>
-            </div>
-	</div>
+</td>
+</tr>
 
-	<table border="1" cellpadding="0" cellspacing="0" width="100%">
- <tr>
-  <td width="260" valign="top">
-   <table border="1" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-     <td>
-      <img src="images/left.gif" alt="" width="100%" height="140" style="display: block;" />
-     </td>
-    </tr>
-    <tr>
-     <td style="padding: 25px 0 0 0;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
-     </td>
-    </tr>
-   </table>
-  </td>
-  <td style="font-size: 0; line-height: 0;" width="20">
-   &nbsp;
-  </td>
-  <td width="260" valign="top">
-   <table border="1" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-     <td>
-      <img src="images/right.gif" alt="" width="100%" height="140" style="display: block;" />
-     </td>
-    </tr>
-    <tr>
-     <td style="padding: 25px 0 0 0;">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
-     </td>
-    </tr>
-   </table>
-  </td>
- </tr>
+<!-- footer of email -->
+
+<tr style="	background-color: #003057; color: #ffffff;">
+	<td style="padding:15px;"><br>No need to wait for spring or fall semester. It's back-to-school time at WGU year-round. Get started by talking to an Enrollment Counselor today, and you'll be on your way to realizing your dream of a bachelor's or master's degree—sooner than you might think! You can <a target="_blank" href="https://inquiry.wgu.edu/#!/application"><b>APPLY NOW</b></a>, <a title="Learn more about admissions" href="https://www.wgu.edu/admissions.html"><b>learn about online college admissions at WGU</b></a>, or <a target="_blank" href="https://inquiry.wgu.edu/#!/inquiryLoad"><b>request info</b></a>!<br>
+<p style="text-align: center">
+<br>
+
+<a href="tel:866.225.5948">866.225.5948</a><br>
+<a href="https://www.wgu.edu/privacy.html">Privacy Policy</a> | <a href="https://www.wgu.edu/contact.html">Contact Us</a></p>
+</td>
+</tr>
 </table>
 </body>
 </html>
